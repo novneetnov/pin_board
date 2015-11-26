@@ -8,4 +8,20 @@ ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
 Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:PinBoard
 ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreatePins	db/migrate/20151126120142_create_pins.rb	/^class CreatePins < ActiveRecord::Migration$/;"	c
+Pin	app/models/pin.rb	/^class Pin < ActiveRecord::Base$/;"	c
 PinBoard	config/application.rb	/^module PinBoard$/;"	m
+PinTest	test/models/pin_test.rb	/^class PinTest < ActiveSupport::TestCase$/;"	c
+PinsController	app/controllers/pins_controller.rb	/^class PinsController < ApplicationController$/;"	c
+PinsControllerTest	test/controllers/pins_controller_test.rb	/^class PinsControllerTest < ActionController::TestCase$/;"	c
+PinsHelper	app/helpers/pins_helper.rb	/^module PinsHelper$/;"	m
+change	db/migrate/20151126120142_create_pins.rb	/^  def change$/;"	f	class:CreatePins
+create	app/controllers/pins_controller.rb	/^	def create$/;"	f	class:PinsController
+destroy	app/controllers/pins_controller.rb	/^	def destroy$/;"	f	class:PinsController
+edit	app/controllers/pins_controller.rb	/^	def edit$/;"	f	class:PinsController
+find_pin	app/controllers/pins_controller.rb	/^	def find_pin$/;"	f	class:PinsController
+index	app/controllers/pins_controller.rb	/^	def index$/;"	f	class:PinsController
+new	app/controllers/pins_controller.rb	/^	def new$/;"	f	class:PinsController
+pin_params	app/controllers/pins_controller.rb	/^	def pin_params$/;"	f	class:PinsController
+show	app/controllers/pins_controller.rb	/^	def show$/;"	f	class:PinsController
+update	app/controllers/pins_controller.rb	/^	def update$/;"	f	class:PinsController
