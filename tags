@@ -5,23 +5,46 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+ActsAsVotableMigration	db/migrate/20151127102001_acts_as_votable_migration.rb	/^class ActsAsVotableMigration < ActiveRecord::Migration$/;"	c
+AddAttachmentImageToPins	db/migrate/20151127062804_add_attachment_image_to_pins.rb	/^class AddAttachmentImageToPins < ActiveRecord::Migration$/;"	c
+AddUserIdToPins	db/migrate/20151126160645_add_user_id_to_pins.rb	/^class AddUserIdToPins < ActiveRecord::Migration$/;"	c
 Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:PinBoard
 ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+Comment	app/models/comment.rb	/^class Comment < ActiveRecord::Base$/;"	c
+CommentTest	test/models/comment_test.rb	/^class CommentTest < ActiveSupport::TestCase$/;"	c
+CommentsController	app/controllers/comments_controller.rb	/^class CommentsController < ApplicationController$/;"	c
+CommentsControllerTest	test/controllers/comments_controller_test.rb	/^class CommentsControllerTest < ActionController::TestCase$/;"	c
+CommentsHelper	app/helpers/comments_helper.rb	/^module CommentsHelper$/;"	m
+CreateComments	db/migrate/20151127151358_create_comments.rb	/^class CreateComments < ActiveRecord::Migration$/;"	c
 CreatePins	db/migrate/20151126120142_create_pins.rb	/^class CreatePins < ActiveRecord::Migration$/;"	c
+DeviseCreateUsers	db/migrate/20151126154737_devise_create_users.rb	/^class DeviseCreateUsers < ActiveRecord::Migration$/;"	c
 Pin	app/models/pin.rb	/^class Pin < ActiveRecord::Base$/;"	c
 PinBoard	config/application.rb	/^module PinBoard$/;"	m
 PinTest	test/models/pin_test.rb	/^class PinTest < ActiveSupport::TestCase$/;"	c
 PinsController	app/controllers/pins_controller.rb	/^class PinsController < ApplicationController$/;"	c
 PinsControllerTest	test/controllers/pins_controller_test.rb	/^class PinsControllerTest < ActionController::TestCase$/;"	c
 PinsHelper	app/helpers/pins_helper.rb	/^module PinsHelper$/;"	m
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UserTest	test/models/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
 change	db/migrate/20151126120142_create_pins.rb	/^  def change$/;"	f	class:CreatePins
+change	db/migrate/20151126154737_devise_create_users.rb	/^  def change$/;"	f	class:DeviseCreateUsers
+change	db/migrate/20151126160645_add_user_id_to_pins.rb	/^  def change$/;"	f	class:AddUserIdToPins
+change	db/migrate/20151127151358_create_comments.rb	/^  def change$/;"	f	class:CreateComments
+comment_params	app/controllers/comments_controller.rb	/^	def comment_params$/;"	f	class:CommentsController
+create	app/controllers/comments_controller.rb	/^	def create$/;"	f	class:CommentsController
 create	app/controllers/pins_controller.rb	/^	def create$/;"	f	class:PinsController
+destroy	app/controllers/comments_controller.rb	/^	def destroy$/;"	f	class:CommentsController
 destroy	app/controllers/pins_controller.rb	/^	def destroy$/;"	f	class:PinsController
+down	db/migrate/20151127062804_add_attachment_image_to_pins.rb	/^  def self.down$/;"	F	class:AddAttachmentImageToPins
+down	db/migrate/20151127102001_acts_as_votable_migration.rb	/^  def self.down$/;"	F	class:ActsAsVotableMigration
 edit	app/controllers/pins_controller.rb	/^	def edit$/;"	f	class:PinsController
 find_pin	app/controllers/pins_controller.rb	/^	def find_pin$/;"	f	class:PinsController
 index	app/controllers/pins_controller.rb	/^	def index$/;"	f	class:PinsController
 new	app/controllers/pins_controller.rb	/^	def new$/;"	f	class:PinsController
 pin_params	app/controllers/pins_controller.rb	/^	def pin_params$/;"	f	class:PinsController
 show	app/controllers/pins_controller.rb	/^	def show$/;"	f	class:PinsController
+up	db/migrate/20151127062804_add_attachment_image_to_pins.rb	/^  def self.up$/;"	F	class:AddAttachmentImageToPins
+up	db/migrate/20151127102001_acts_as_votable_migration.rb	/^  def self.up$/;"	F	class:ActsAsVotableMigration
 update	app/controllers/pins_controller.rb	/^	def update$/;"	f	class:PinsController
+upvote	app/controllers/pins_controller.rb	/^	def upvote$/;"	f	class:PinsController

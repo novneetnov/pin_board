@@ -1,0 +1,7 @@
+= simple_form_for [@pin, @pin.comments.build] do |f|
+  .form-group
+    = f.input :user_name, input_html: {class: 'form-control'}
+  .form-group
+    = f.input :body, input_html: {class: 'form-control'}
+  
+  = f.button :submit, class: "btn btn-primary"

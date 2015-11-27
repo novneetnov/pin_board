@@ -6,10 +6,7 @@
       .panel-body
         %h1= @pin.title
         %p.description= @pin.description
-        %p
-        Submitted by 
-        =@pin.user.email
-      .panel-footer
+        %hr
         .row
           .col-md-6
             %p.user
@@ -23,3 +20,15 @@
               - if user_signed_in?
                 = link_to "Edit", edit_pin_path, class: "btn btn-default"
                 = link_to "Delete", pin_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default"
+      .panel-footer 
+        .row
+          .col-md-12
+            %h2 
+              = @pin.comments.count 
+              Comments
+            %br
+            = render @pin.comments
+            %br
+            %h3 Submit Your Comment
+            %br
+            = render 'comments/form'
